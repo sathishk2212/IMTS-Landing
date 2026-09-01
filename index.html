@@ -486,6 +486,15 @@
         errorEl.classList.add('show');
         return;
       }
+
+      const FREE_EMAIL_DOMAINS = ['gmail.com','googlemail.com','yahoo.com','yahoo.co.in','yahoo.co.uk','ymail.com','rocketmail.com','hotmail.com','hotmail.co.uk','outlook.com','outlook.in','live.com','msn.com','icloud.com','me.com','mac.com','aol.com','protonmail.com','proton.me','pm.me','zoho.com','mail.com','gmx.com','yandex.com','rediffmail.com','inbox.com','fastmail.com'];
+      const emailDomain = email.split('@')[1]?.toLowerCase().trim();
+
+      if(FREE_EMAIL_DOMAINS.includes(emailDomain)){
+        errorEl.textContent = 'Company email only allowed — please use your work email address.';
+        errorEl.classList.add('show');
+        return;
+      }
       errorEl.classList.remove('show');
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending…';
