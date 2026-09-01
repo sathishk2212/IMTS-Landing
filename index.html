@@ -482,7 +482,15 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
-        if(!res.ok) throw new Error('Submission failed');
+        if(!res.ok){
+          let detail = '';
+          try{
+            const body = await res.json();
+            detail = body.message || (body.errors && body.errors.map(e => e.message).join('; ')) || JSON.stringify(body);
+          }catch(_){ /* response wasn't JSON */ }
+          console.error('HubSpot form submission rejected:', res.status, detail);
+          throw new Error(detail || 'Submission failed');
+        }
 
         document.getElementById('leadModalForm').style.display = 'none';
         document.getElementById('leadModalSuccess').classList.add('show');
