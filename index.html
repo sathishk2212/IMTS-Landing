@@ -98,10 +98,13 @@
     @keyframes ticker{to{transform:translateX(-50%)}}
 
     section{padding:92px 0}
-    #state{padding-bottom:40px}
-    #fit{padding-top:40px}
-    #meet{padding-bottom:16px}
-    #faq{padding-top:16px}
+    #state{padding-top:36px;padding-bottom:36px}
+    #fit{padding-top:36px;padding-bottom:36px}
+    #questions{padding-top:36px;padding-bottom:36px}
+    #accelerators{padding-top:36px;padding-bottom:36px}
+    #audit{padding-top:36px;padding-bottom:36px}
+    #meet{padding-top:36px;padding-bottom:36px}
+    #faq{padding-top:36px}
     .section-head{margin-bottom:38px;max-width:100%}
     .section-head h2{font-size:45px;letter-spacing:-.05em;line-height:1.04;margin:14px 0 0;color:#fff}
     .section-head p{margin:18px 0 0;color:var(--muted);font-size:1.06rem;max-width:620px}
@@ -134,14 +137,14 @@
     .persona .role{font-size:.77rem;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-weight:900}.persona blockquote{font-size:1.35rem;letter-spacing:-.025em;line-height:1.35;margin:16px 0 24px;font-weight:750;color:#fff}.follow{border-top:1px solid var(--line);padding-top:18px;color:#b6b1d0}.follow small{display:block;color:#8b86ad;text-transform:uppercase;letter-spacing:.11em;font-size:.67rem;font-weight:800;margin-bottom:8px}.tezo-fit{margin-top:20px;padding:14px 16px;background:rgba(176,168,254,.1);border-radius:14px;color:#d9d5f0;font-size:.9rem}.tezo-fit b{color:var(--yellow)}
 
     .accelerators-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-    .accelerator{background:var(--paper-2);border:1px solid var(--line);border-radius:28px;overflow:hidden;min-height:440px;display:flex;flex-direction:column;transition:.2s}.accelerator:hover{border-color:rgba(176,168,254,.4)}
-    .acc-visual{height:170px;position:relative;overflow:hidden;padding:22px;background:#141420}
+    .accelerator{background:var(--paper-2);border:1px solid var(--line);border-radius:28px;overflow:hidden;min-height:440px;display:flex;flex-direction:column;transition:.2s;text-decoration:none;color:inherit}.accelerator:hover{border-color:rgba(176,168,254,.4)}
+    .acc-visual{position:relative;overflow:hidden;padding:22px 22px 24px;padding-top:56px;background:#141420}
     .acc-visual.order{background:linear-gradient(135deg,rgba(229,74,89,.28),rgba(20,20,32,.9))}
     .acc-visual.copilot{background:linear-gradient(135deg,rgba(79,224,189,.22),rgba(20,20,32,.9))}
     .acc-visual.demand{background:linear-gradient(135deg,rgba(78,58,173,.42),rgba(20,20,32,.9))}
     .acc-visual.service{background:linear-gradient(135deg,rgba(176,168,254,.3),rgba(20,20,32,.9))}
     .tag{position:absolute;top:18px;left:18px;border-radius:999px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.14);padding:7px 10px;font-size:.66rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#fff;backdrop-filter:blur(8px)}
-    .mini-flow{position:absolute;left:28px;right:28px;bottom:27px;display:flex;gap:9px;align-items:center}.mini-box{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:10px 12px;font-size:.72rem;font-weight:850;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.22)}.mini-line{height:2px;flex:1;background:rgba(255,255,255,.22)}
+    .mini-flow{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:20px}.mini-box{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:9px 12px;font-size:.72rem;font-weight:850;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.22);white-space:nowrap}
     .acc-body{padding:24px;display:flex;flex-direction:column;flex:1}.acc-body h3{font-size:1.75rem;line-height:1.08;margin:0 0 14px;letter-spacing:-.04em;color:#fff}.acc-body p{color:var(--muted);margin:0 0 20px}.why{margin-top:auto;border-top:1px solid var(--line);padding-top:17px;font-size:.9rem;color:var(--ink-soft)}.why b{display:block;margin-bottom:5px;color:var(--yellow);font-family:'Inter';font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
     .proof{margin-top:10px;color:var(--accent-deep);font-weight:900;font-size:.88rem}
     .warning{margin:28px 0 0;padding:18px 20px;border:1px dashed rgba(255,255,255,.25);border-radius:18px;color:var(--muted);font-size:.96rem}
@@ -155,6 +158,18 @@
 
     .meet-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
     .meet-card{border:1px solid var(--line);background:var(--paper-2);border-radius:26px;padding:28px;transition:.2s}.meet-card:hover{border-color:rgba(176,168,254,.4)}.meet-card h3{font-size:1.75rem;letter-spacing:-.04em;margin:6px 0 12px;color:#fff}.meet-card p{color:var(--muted)}.meet-card ul{padding-left:18px;color:var(--ink-soft)}.meet-card li{margin:8px 0}
+
+    .expert-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    .expert-card{border:1px solid var(--line);background:var(--paper-2);border-radius:26px;overflow:hidden;transition:.2s}.expert-card:hover{border-color:rgba(176,168,254,.4);transform:translateY(-2px)}
+    .expert-photo{position:relative;aspect-ratio:16/10;background:var(--blue-soft);overflow:hidden}.expert-photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .expert-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(10,10,16,.9) 100%)}
+    .expert-body{padding:22px 24px 26px}
+    .expert-body h3{font-size:1.35rem;margin:0 0 4px;color:#fff;letter-spacing:-.03em}
+    .expert-role{font-size:.82rem;font-weight:800;color:var(--accent-deep);margin-bottom:18px}
+    .expert-label{font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800;margin-bottom:10px}
+    .expert-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+    .expert-tags span{border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:.78rem;color:var(--ink-soft)}
+    .expert-link{font-size:.85rem;font-weight:800;color:var(--yellow);text-decoration:none}.expert-link:hover{text-decoration:underline}
     .spot{display:flex;gap:14px;align-items:flex-start;margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}.spot-icon{width:44px;height:44px;border-radius:14px;background:var(--accent-soft);display:grid;place-items:center;font-size:1.2rem}.spot b{display:block;color:#fff}
 
     .faq-list{display:grid;gap:10px;max-width:920px;margin:0 auto}.faq{border:1px solid var(--line);background:var(--paper-2);border-radius:18px;overflow:hidden}.faq button{width:100%;border:0;background:transparent;padding:20px;text-align:left;display:flex;justify-content:space-between;gap:20px;font-size:1rem;font-weight:850;cursor:pointer;color:#fff}.faq button span:last-child{font-size:1.3rem;color:var(--accent)}.faq .answer{display:none;padding:0 20px 20px;color:var(--muted);max-width:790px}.faq.open .answer{display:block}.faq.open button span:last-child{transform:rotate(45deg)}
@@ -199,7 +214,7 @@
     @media(max-width:680px){
       .wrap{width:min(var(--max),calc(100% - 24px))}.nav-inner{height:62px}.brand{font-size:1.35rem}.brand img{height:22px}
       h1{font-size:clamp(2.5rem,14vw,4rem)}.hero-grid{gap:34px}.hero-copy{font-size:1.02rem}
-      section{padding:70px 0}.stats,.fit-grid,.persona-grid,.accelerators-grid,.meet-grid,.audit-list{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(4,1fr);gap:5px}.timebox{padding:12px 3px}.timebox b{font-size:1.25rem}.fit-callout{align-items:flex-start;flex-direction:column}
+      section{padding:70px 0}.stats,.fit-grid,.persona-grid,.accelerators-grid,.meet-grid,.expert-grid,.audit-list{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(4,1fr);gap:5px}.timebox{padding:12px 3px}.timebox b{font-size:1.25rem}.fit-callout{align-items:flex-start;flex-direction:column}
       .flow-row{grid-template-columns:1fr 24px 1fr}.node{padding:13px;min-height:86px}.node strong{font-size:.86rem}.human-glue:after{display:none}
       .final-box h2{font-size:3rem}.section-head h2{font-size:2.3rem}
     }
@@ -233,9 +248,8 @@
     <header class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">Tezo → IMTS 2026</div>
+          <div class="eyebrow"><img src="imtsw.png" alt="IMTS 2026" style="height:22px;width:auto;display:block"></div>
           <p class="event-line">14–19 September · McCormick Place · Chicago</p>
-          <p class="attendee-line">Attending, not exhibiting. No booth. No badge scanner. No hard sell.</p>
           <h1>Automation doesn't stop at the <span class="accent">machine.</span></h1>
           <p class="hero-copy">You'll see plenty of machines doing extraordinary things at IMTS. We'd like to talk about the work around them that still happens by <strong>email, spreadsheet and swivel chair.</strong> A PO someone rekeys. A shortage someone discovers too late. An exception sitting in an inbox. A planner hunting across four systems for an answer.</p>
           <div class="hero-actions">
@@ -251,7 +265,7 @@
             <div class="flow-row"><div class="node human-glue"><small>Step 02</small><strong>Check ERP, CRM & inventory</strong></div><div class="arrow"></div><div class="node"><small>Systems</small><strong>ERP · CRM · WMS</strong></div></div>
             <div class="flow-row"><div class="node"><small>Exception</small><strong>Shortage / mismatch / expedite</strong></div><div class="arrow"></div><div class="node human-glue"><small>Step 03</small><strong>Email, chase, reconcile</strong></div></div>
           </div>
-          <div class="flow-note"><strong style="color:var(--ink)">Our IMTS question:</strong> if volume doubled tomorrow, which box would need twice as many people?</div>
+          <div class="flow-note"><strong style="color:var(--ink)">Our question:</strong> if volume doubled tomorrow, which box would need twice as many people?</div>
         </div>
       </div>
       <div class="wrap countdown-panel reveal">
@@ -264,35 +278,35 @@
 
     <section id="state">
       <div class="wrap">
-        <div class="section-head reveal"><div><div class="eyebrow">The state of play · sourced</div><h2>Manufacturing has an automation problem. Just not the one you think.</h2></div><p>Digital manufacturing is already mainstream. The harder problem is getting the value to travel end-to-end — across data, workflows, people and enterprise systems.</p></div>
+        <div class="section-head reveal"><div><div class="eyebrow">The state of play · sourced</div><h2>Manufacturing has an automation problem. Just not the one you think.</h2></div><p>Digital manufacturing is already mainstream. The harder problem is getting the value to travel end-to-end - across data, workflows, people and enterprise systems.</p></div>
         <div class="stats">
           <article class="stat reveal"><div><div class="num">90%</div><p>of manufacturers say digital transformation is necessary to stay competitive.</p></div><a class="source" href="https://www.rockwellautomation.com/en-gb/capabilities/digital-transformation/state-of-smart-manufacturing.html" target="_blank" rel="noopener">Rockwell Automation · 2026 ↗</a></article>
           <article class="stat reveal"><div><div class="num">59%</div><p>are already using smart manufacturing.</p></div><a class="source" href="https://www.rockwellautomation.com/en-gb/capabilities/digital-transformation/state-of-smart-manufacturing.html" target="_blank" rel="noopener">Rockwell Automation · 2026 ↗</a></article>
           <article class="stat reveal"><div><div class="num">72%</div><p>of operations leaders rank automating operations as a top-three AI investment focus.</p></div><a class="source" href="https://www.pwc.com/us/en/services/consulting/supply-chain-operations/library/digital-trends-operations-survey.html" target="_blank" rel="noopener">PwC Digital Trends in Operations · 2026 ↗</a></article>
           <article class="stat reveal"><div><div class="num">89%</div><p>say technology investments have not fully delivered the expected results.</p></div><a class="source" href="https://www.pwc.com/us/en/services/consulting/supply-chain-operations/library/digital-trends-operations-survey.html" target="_blank" rel="noopener">PwC Digital Trends in Operations · 2026 ↗</a></article>
         </div>
-        <div class="punch-callout reveal"><p>The factory isn't short of technology. It's short of <em>connections between the work.</em></p></div>
+        <div class="punch-callout reveal"><p>Your factory isn't short of technologies.<em> It's short of connections between the works.</em></p></div>
       </div>
     </section>
 
     <section id="fit">
       <div class="wrap">
-        <div class="section-head reveal"><div><div class="eyebrow">Where Tezo fits</div><h2>We automate the work between the systems.</h2></div><p>Not a generic “AI for manufacturing” pitch. We look for the point where a digital workflow quietly becomes a human workflow — and where exceptions, handoffs and fragmented data make scale expensive.</p></div>
+        <div class="section-head reveal"><div><div class="eyebrow">Where Tezo fits</div><h2>We automate the work between the systems.</h2></div><p>Not a generic “AI for manufacturing” pitch. We look for the point where a digital workflow quietly becomes a human workflow - and where exceptions, handoffs and fragmented data make scale expensive.</p></div>
         <div class="fit-grid">
           <article class="fit-card reveal"><span class="idx">01</span><h3>Orders arrive however customers choose.</h3><p>Email. PDF. Excel. Portal. EDI. Different formats, different rules, different exceptions.</p></article>
           <article class="fit-card reveal"><span class="idx">02</span><h3>Systems disagree.</h3><p>ERP says one thing. CRM another. Supply chain has a third version. People become the reconciliation layer.</p></article>
           <article class="fit-card reveal"><span class="idx">03</span><h3>The happy path breaks.</h3><p>Shortage. Expedite. Change request. Missing information. That's usually where the automation stops.</p></article>
           <article class="fit-card reveal"><span class="idx">04</span><h3>Someone becomes the integration.</h3><p>Copy. Paste. Email. Reconcile. Escalate. Repeat. The work is digital; the workflow isn't.</p></article>
         </div>
-        <div class="fit-callout reveal"><span>That's the work we automate.</span><span style="font-size:.9rem;font-weight:700;opacity:.85">AI · Data · Digital Engineering · Quality Engineering</span></div>
+        <div class="fit-callout reveal" style="justify-content:center;text-align:center"><span style="font-weight:900">AI · Data · Digital Engineering · Quality Engineering</span></div>
       </div>
     </section>
 
     <section class="questions" id="questions">
       <div class="wrap">
-        <div class="section-head reveal"><div><div class="eyebrow">What we're actually bringing to Chicago</div><h2>Four questions. Pick the one that sounds uncomfortably familiar.</h2></div><p>We open with a question rather than a pitch. If the honest answer makes you wince slightly, that's probably the twenty minutes worth having.</p></div>
+        <div class="section-head reveal"><div><div class="eyebrow">What we're actually bringing to Chicago</div><h2>4 questions. <br> Pick the one that sounds uncomfortably familiar.</h2></div><p>We open with a question rather than a pitch. If the honest answer makes you wince slightly, that's probably the twenty minutes worth having.</p></div>
         <div class="persona-grid">
-          <article class="persona reveal"><div class="role">COO · VP Operations · Plant Leader</div><blockquote>“Which process in your operation is technically digital but still needs people moving information between systems all day?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“What happens when the happy path breaks?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> exception-first workflow automation across operational systems — not just automation of the clean cases.</div></article>
+          <article class="persona reveal"><div class="role">COO · VP Operations · Plant Leader</div><blockquote>“Which process in your operation is technically digital but still needs people moving information between systems all day?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“What happens when the happy path breaks?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> exception-first workflow automation across operational systems; not just automation of the clean cases.</div></article>
           <article class="persona reveal"><div class="role">VP Supply Chain · Planning · Logistics</div><blockquote>“When supply changes at 9:00am, how long before everyone who needs to act sees the same version of the problem?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“And how many spreadsheets are involved?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> connected operational intelligence across demand, inventory, orders, suppliers and exceptions.</div></article>
           <article class="persona reveal"><div class="role">CIO · CTO · Digital Manufacturing</div><blockquote>“How much of your automation roadmap is actually integration work wearing an AI label?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“Where does the workflow stop today?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> AI + data + digital engineering that turns point automation into a production workflow.</div></article>
           <article class="persona reveal"><div class="role">Customer Operations · Order Management</div><blockquote>“If order volume doubled tomorrow, what part of the process would require twice as many people?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“What would it take for only the exceptions to reach a person?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> intelligent document and order orchestration with validation, business rules and exception routing.</div></article>
@@ -302,14 +316,11 @@
 
     <section id="accelerators">
       <div class="wrap">
-        <div class="section-head reveal"><div><div class="eyebrow">If you ask, we'll show you</div><h2>Four things that run. Ninety seconds each. On a laptop. Somewhere in McCormick Place.</h2></div><p>No booth, no stage, no thirty-seven-slide transformation deck. Working patterns for the kinds of operational problems we expect to hear all week.</p></div>
+        <div class="section-head reveal"><div><div class="eyebrow">If you ask, we'll show you</div><h2>Two frameworks that run. Ninety seconds each. On a laptop, somewhere in McCormick Place.</h2></div><p>No booth, no stage, no thirty-seven-slide transformation deck. Two working patterns instead of a product catalogue, and they sit at opposite ends of the same plant: the order coming in the front, and the machine that has to make it.</p></div>
         <div class="accelerators-grid">
-          <article class="accelerator reveal"><div class="acc-visual order"><span class="tag">Accelerator 01 · Hero</span><div class="mini-flow"><span class="mini-box">PO / RFQ</span><span class="mini-line"></span><span class="mini-box">AI validation</span><span class="mini-line"></span><span class="mini-box">ERP</span></div></div><div class="acc-body"><h3>Intelligent Order Entry & RFQ Automation</h3><p>Customer orders arrive however customers choose to send them. AI extracts, validates and orchestrates the workflow across enterprise systems, routing only genuine exceptions to people.</p><div class="why"><b>Why it's different</b>We automate the exception and the downstream workflow — not just the document extraction.<div class="proof">Production reference: a multi-day order/RFQ workflow reduced to minutes.</div></div></div></article>
-          <article class="accelerator reveal"><div class="acc-visual copilot"><span class="tag">Accelerator 02</span><div class="mini-flow"><span class="mini-box">ERP</span><span class="mini-box">WMS</span><span class="mini-box">Supplier</span><span class="mini-line"></span><span class="mini-box">Ask</span></div></div><div class="acc-body"><h3>Supply Chain Operations Copilot</h3><p>Orders, inventory, supplier, shipment and enterprise data brought into a conversational operating layer so teams can ask what changed, why it matters and what needs attention.</p><div class="why"><b>Why it's different</b>Not another dashboard. It turns fragmented operational data into a decision and follow-through workflow.</div></div></article>
-          <article class="accelerator reveal"><div class="acc-visual demand"><span class="tag">Accelerator 03</span><div class="mini-flow"><span class="mini-box">Demand</span><span class="mini-line"></span><span class="mini-box">Inventory</span><span class="mini-line"></span><span class="mini-box">Action</span></div></div><div class="acc-body"><h3>Demand, Inventory & Supply Intelligence</h3><p>Combines demand signals, inventory positions, supply constraints and historical patterns to identify risk early and help planners focus on the decisions that need judgment.</p><div class="why"><b>Why it's different</b>Forecasting becomes a decision workflow — not another forecast file or isolated model output.</div></div></article>
-          <article class="accelerator reveal"><div class="acc-visual service"><span class="tag">Accelerator 04</span><div class="mini-flow"><span class="mini-box">Customer</span><span class="mini-line"></span><span class="mini-box">Parts</span><span class="mini-box">Tech</span><span class="mini-line"></span><span class="mini-box">SLA</span></div></div><div class="acc-body"><h3>Service & Dispatch Intelligence</h3><p>Optimises the moving pieces after the product leaves the factory: technicians, appointments, parts, routes, capacity and service commitments.</p><div class="why"><b>Why it's different</b>The goal isn't a prettier dispatch board. It's fewer service exceptions requiring manual intervention.</div></div></article>
+          <a class="accelerator reveal" href="https://org.tezo.com/accelerator/agentic-quote-to-cash/" target="_blank" rel="noopener"><div class="acc-visual order"><span class="tag">Accelerator 01</span><div class="mini-flow"><span class="mini-box">RFQ email</span><span class="mini-box">Catalogue + ERP</span><span class="mini-box">Margin check</span><span class="mini-box">Quote</span></div></div><div class="acc-body"><h3>Order Entry & RFQ Automation</h3><p>A customer RFQ arrives the way customer RFQs actually arrive: an email, a spreadsheet, a drawing attached. The agent reads it, matches every line to your catalogue and your ERP, checks stock and lead time, prices it against your margin floor and drafts the quote. A person reads that draft and sends it.</p><div class="why"><b>Why it's different</b>The margin floor lives in the interface, not in a policy document. A quote that breaks it cannot be sent. Going below it is an exception with a name on it, a reason attached and a record left behind. And it doesn't stop at the quote: the order, the invoice and the cash application run on the same thread.<div class="proof">What you'll see: an RFQ email land, and a priced quote come back out of it.</div></div></div></a>
+          <a class="accelerator reveal" href="https://org.tezo.com/accelerator/agentic-predictive-intelligence/" target="_blank" rel="noopener"><div class="acc-visual copilot"><span class="tag">Accelerator 02</span><div class="mini-flow"><span class="mini-box">Vibration, temp, load</span><span class="mini-box">Learned baseline</span><span class="mini-box">Ranked cause</span><span class="mini-box">Work order</span></div></div><div class="acc-body"><h3>Predictive Maintenance Intelligence</h3><p>The sensors you already have, on the machines you already run. The model learns what normal looks like for each asset instead of applying one threshold across the floor, then speaks up while the failure pattern is still forming: what is going, why it believes so, and what each response would cost you.</p><div class="why"><b>Why it's different</b>An alarm tells you something has happened. This tells you what is about to, ranks the evidence behind the call, names the causes it has ruled out, and then books the window itself: parts reserved, technician assigned, work order raised.<div class="proof">What you'll see: the model call a failure while the readings still look fine.</div></div></div></a>
         </div>
-        <p class="warning reveal"><strong>A fair warning:</strong> we'll almost certainly spend more of the twenty minutes on your workflow than on our accelerators. That's intentional. The best IMTS conversation for us ends with a clearer problem, not a longer product demo.</p>
       </div>
     </section>
 
@@ -331,8 +342,30 @@
 
     <section id="meet">
       <div class="wrap">
-        <div class="section-head reveal"><div><div class="eyebrow">Who you'll actually be talking to</div><h2>The Tezo team. No booth handoff afterwards.</h2></div><p>We're attending IMTS as participants, not exhibitors. That means the people you meet are there to have the conversation, not scan a badge and pass you to someone else.</p></div>
-        <div class="meet-grid">
+        <div class="section-head reveal"><div><div class="eyebrow">Who you'll actually be talking to</div></div></div>
+        <div class="expert-grid">
+          <article class="expert-card reveal">
+            <div class="expert-photo"><img src="a.png" alt="Ashish Sharma"></div>
+            <div class="expert-body">
+              <h3>Ashish Sharma</h3>
+              <div class="expert-role">Manufacturing Vertical Expert: Model Assurance &amp; Plant Data</div>
+              <div class="expert-label">Talk to him about</div>
+              <div class="expert-tags"><span>Predictive models that drift</span><span>Machine &amp; sensor data quality</span><span>ERP, MES and historian data</span><span>Proving AI still works</span></div>
+              <a class="expert-link" href="https://www.linkedin.com/in/ashish-sharma101/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+            </div>
+          </article>
+          <article class="expert-card reveal">
+            <div class="expert-photo"><img src="s.png" alt="Sumeet Pore"></div>
+            <div class="expert-body">
+              <h3>Sumeet Pore</h3>
+              <div class="expert-role">Manufacturing Vertical Expert: Commercial Operations &amp; Quote-to-Cash</div>
+              <div class="expert-label">Talk to him about</div>
+              <div class="expert-tags"><span>RFQ &amp; quote turnaround</span><span>Margin &amp; pricing discipline</span><span>Order-to-cash and DSO</span><span>Configured &amp; spec'd orders</span></div>
+              <a class="expert-link" href="https://www.linkedin.com/in/sumeet-pore-0094933/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+            </div>
+          </article>
+        </div>
+        <div class="meet-grid" style="margin-top:16px">
           <article class="meet-card reveal"><div class="eyebrow">Talk to us about</div><h3>The workflow that's creating operational drag.</h3><p>Especially if it crosses more than one system or team and the exceptions are still handled manually.</p><ul><li>Order / RFQ automation</li><li>Supply-chain and planning exceptions</li><li>Operational data and decision intelligence</li><li>Service / dispatch workflows</li><li>AI agents that have to work inside real enterprise systems</li></ul></article>
           <article class="meet-card reveal"><div class="eyebrow">How to spot us</div><h3>No booth. That's the point.</h3><p>We'll be moving between the automation, software, quality, plant-operations and AI conversations across McCormick Place — with working accelerators on a laptop if the discussion warrants it.</p><div class="spot"><div class="spot-icon">☕</div><div><b>Best meeting room:</b><span style="color:var(--muted)"> a coffee, a quiet table, or the twenty-minute gap your Show Planner says is still free.</span></div></div><div style="margin-top:22px"><button type="button" class="btn primary" onclick="openLeadModal()">Start the conversation →</button></div></article>
         </div>
