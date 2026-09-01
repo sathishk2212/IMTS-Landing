@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tezo at IMTS 2026 | September 14–19, Chicago</title>
+  <meta name="description" content="Tezo is attending IMTS 2026 in Chicago. Bring one manufacturing workflow you wish would disappear — order entry, supply chain exceptions, demand and inventory decisions, or service operations." />
+  <meta name="theme-color" content="#000000" />
+  <script>document.documentElement.classList.add('js');</script>
+  <meta property="og:title" content="Tezo at IMTS 2026 | Automation doesn't stop at the machine." />
+  <meta property="og:description" content="Attending, not exhibiting. Bring us one workflow you wish would disappear." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --paper:#000;
+      --paper-2:linear-gradient(160deg,#141420 0%,#0a0a10 100%);
+      --tint:#0a0a10;
+      --ink:#f5f4fa;
+      --ink-deep:#0d0b16;
+      --ink-soft:rgba(245,244,250,.72);
+      --muted:rgba(245,244,250,.58);
+      --line:rgba(255,255,255,.14);
+      --accent:#e54a59;
+      --accent-deep:#f16875;
+      --accent-dark:#c73847;
+      --accent-soft:rgba(229,74,89,.16);
+      --green:#4fe0bd;
+      --green-soft:rgba(45,215,175,.16);
+      --blue:#4e3aad;
+      --blue-deep:#6c58d1;
+      --blue-soft:rgba(78,58,173,.22);
+      --yellow:#b0a8fe;
+      --shadow:0 18px 50px rgba(0,0,0,.5);
+      --shadow-lg:0 20px 60px -16px rgba(20,10,50,.6);
+      --radius:22px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{max-width:100%;height:auto}
+    a{color:inherit}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+    .eyebrow{display:flex;gap:10px;align-items:center;text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:800;color:var(--yellow)}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.92);backdrop-filter:saturate(160%) blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:900;letter-spacing:-.04em;font-size:1.5rem;color:#fff}
+    .brand img{height:26px;width:auto;display:block}
+    .nav-links{display:flex;gap:26px;align-items:center;font-size:.9rem;font-weight:700}
+    .nav-links a{text-decoration:none;color:var(--ink-soft);transition:color .14s}.nav-links a:hover{color:#fff}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:12px 18px;font-weight:800;text-decoration:none;border:1px solid rgba(255,255,255,.32);transition:.2s ease;cursor:pointer;font-family:inherit;font-size:.95rem}
+    .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 8px 26px rgba(229,74,89,.34)}.btn.primary:hover{transform:translateY(-2px);background:var(--accent-deep);box-shadow:0 10px 30px rgba(229,74,89,.4)}
+    .btn.ghost{background:transparent;color:#fff}.btn.ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.6)}
+    .mobile-menu{display:none}
+
+    .hero{padding:78px 0 54px;overflow:hidden;position:relative;
+      background:
+        radial-gradient(78% 62% at 88% -14%,rgba(78,58,173,.72),rgba(78,58,173,0) 62%),
+        radial-gradient(58% 52% at -6% 108%,rgba(229,74,89,.36),rgba(229,74,89,0) 58%),
+        radial-gradient(44% 34% at 26% 16%,rgba(176,168,254,.16),rgba(176,168,254,0) 62%),
+        var(--paper)}
+    .hero:before{content:'';position:absolute;inset:0;opacity:.3;pointer-events:none;
+      background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+      background-size:64px 64px;
+      mask-image:radial-gradient(70% 60% at 50% 24%,#000,transparent 78%);
+      -webkit-mask-image:radial-gradient(70% 60% at 50% 24%,#000,transparent 78%)}
+    .hero .wrap{position:relative;z-index:2}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+    .event-line{font-weight:700;color:var(--ink-soft);margin:19px 0 8px}
+    .attendee-line{font-weight:800;color:var(--yellow);margin:0 0 18px}
+    h1{font-size:80px;letter-spacing:-.06em;line-height:.95;margin:0 0 26px;max-width:980px;color:#fff}
+    h1 .accent{color:var(--accent)}
+    .hero-copy{font-size:1.17rem;max-width:680px;color:#c8c4e0;margin-bottom:28px}
+    .hero-copy strong{color:#fff}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .micro{font-size:.82rem;color:#8b86ad;margin-top:16px;max-width:620px}
+
+    .machine-card{background:var(--paper-2);border:1px solid var(--line);border-radius:32px;padding:26px;box-shadow:var(--shadow-lg);position:relative}
+    .machine-top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:26px}
+    .machine-top strong{color:#fff}
+    .live-pill{font-size:.76rem;font-weight:800;padding:7px 10px;border-radius:999px;background:var(--green-soft);color:var(--green);display:inline-flex;align-items:center;gap:7px}.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(79,224,189,.14);animation:pulse 1.4s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.82)}}
+    .flow{display:grid;gap:14px}
+    .flow-row{display:grid;grid-template-columns:1fr 42px 1fr;align-items:center;gap:10px}
+    .node{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:18px;padding:17px;min-height:92px}
+    .node small{display:block;text-transform:uppercase;letter-spacing:.12em;font-size:.63rem;color:var(--muted);font-weight:800;margin-bottom:8px}.node strong{font-size:1rem;color:#fff}
+    .arrow{height:2px;background:var(--line);position:relative}.arrow:after{content:"";position:absolute;right:-1px;top:-4px;border-left:7px solid var(--line);border-top:5px solid transparent;border-bottom:5px solid transparent}
+    .human-glue{background:var(--accent-soft);border-color:rgba(229,74,89,.5);position:relative}.human-glue:after{content:"human glue";position:absolute;right:10px;top:10px;font-size:.62rem;font-weight:900;text-transform:uppercase;letter-spacing:.09em;color:var(--accent-deep)}
+    .flow-note{padding:17px 2px 0;color:var(--muted);font-size:.88rem;border-top:1px dashed var(--line);margin-top:18px}
+    .flow-note strong{color:#fff}
+
+    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;background:rgba(255,255,255,.03);overflow:hidden}
+    .ticker-track{display:flex;gap:38px;white-space:nowrap;animation:ticker 26s linear infinite;font-weight:800;font-size:.9rem;letter-spacing:.02em;color:var(--ink-soft)}
+    .ticker-track span:before{content:"✦";color:var(--accent);margin-right:38px}
+    @keyframes ticker{to{transform:translateX(-50%)}}
+
+    section{padding:92px 0}
+    #state{padding-bottom:40px}
+    #fit{padding-top:40px}
+    #meet{padding-bottom:16px}
+    #faq{padding-top:16px}
+    .section-head{margin-bottom:38px;max-width:100%}
+    .section-head h2{font-size:45px;letter-spacing:-.05em;line-height:1.04;margin:14px 0 0;color:#fff}
+    .section-head p{margin:18px 0 0;color:var(--muted);font-size:1.06rem;max-width:620px}
+
+    .countdown-panel{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);color:#fff;padding:28px;border-radius:28px;margin-top:46px}
+    .countdown-copy h3{font-size:1.7rem;margin:0 0 6px;letter-spacing:-.03em}.countdown-copy p{margin:0;color:#8b86ad}
+    .countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .timebox{background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.07);border-radius:16px;text-align:center;padding:16px 7px}.timebox b{display:block;font-size:1.65rem;font-variant-numeric:tabular-nums}.timebox span{font-size:.66rem;text-transform:uppercase;letter-spacing:.11em;color:#8b86ad}
+
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .stat{background:var(--paper-2);border:1px solid var(--line);border-radius:22px;padding:24px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.stat:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(176,168,254,.4)}
+    .stat .num{font-size:3.15rem;font-weight:900;letter-spacing:-.06em;line-height:1;color:var(--yellow)}
+    .stat p{font-weight:700;font-size:.98rem;margin:10px 0 18px;color:#fff}.source{font-size:.72rem;color:var(--muted);text-decoration:none}.source:hover{text-decoration:underline;color:var(--ink-soft)}
+    .punch-callout{margin-top:32px;border-radius:20px;background:var(--accent);padding:22px 26px}.punch-callout p{margin:0;font-size:1.05rem;line-height:1.5;letter-spacing:-.01em;font-weight:800;color:#fff}.punch-callout em{font-style:normal;color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:3px}
+    @media(max-width:680px){.punch-callout{padding:18px 20px}.punch-callout p{font-size:.95rem}}
+
+    .fit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+    .fit-card{padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.045);min-height:255px;transition:.2s}.fit-card:hover{border-color:rgba(176,168,254,.4);background:rgba(255,255,255,.07)}
+    .fit-card .idx{font-size:.75rem;font-weight:900;color:var(--accent);letter-spacing:.12em}.fit-card h3{font-size:1.35rem;line-height:1.1;margin:24px 0 10px;letter-spacing:-.03em;color:#fff}.fit-card p{margin:0;color:var(--muted)}
+    .fit-callout{margin-top:18px;border-radius:20px;background:var(--accent);color:#fff;padding:21px 24px;font-size:1.25rem;font-weight:900;display:flex;justify-content:space-between;gap:20px;align-items:center}
+
+    .questions{background:
+        radial-gradient(52% 60% at 88% 0%,rgba(78,58,173,.45),transparent 60%),
+        radial-gradient(40% 50% at 0% 100%,rgba(229,74,89,.18),transparent 58%),
+        var(--paper);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+    .questions .eyebrow,.questions .section-head p{color:#b6b1d0}
+    .persona-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .persona{border:1px solid var(--line);border-radius:22px;padding:26px;background:rgba(255,255,255,.045);position:relative;overflow:hidden;transition:.2s}.persona:hover{border-color:rgba(176,168,254,.4);background:rgba(255,255,255,.07)}
+    .persona:before{content:"";width:180px;height:180px;border-radius:50%;position:absolute;right:-90px;top:-110px;background:rgba(229,74,89,.14)}
+    .persona .role{font-size:.77rem;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-weight:900}.persona blockquote{font-size:1.35rem;letter-spacing:-.025em;line-height:1.35;margin:16px 0 24px;font-weight:750;color:#fff}.follow{border-top:1px solid var(--line);padding-top:18px;color:#b6b1d0}.follow small{display:block;color:#8b86ad;text-transform:uppercase;letter-spacing:.11em;font-size:.67rem;font-weight:800;margin-bottom:8px}.tezo-fit{margin-top:20px;padding:14px 16px;background:rgba(176,168,254,.1);border-radius:14px;color:#d9d5f0;font-size:.9rem}.tezo-fit b{color:var(--yellow)}
+
+    .accelerators-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .accelerator{background:var(--paper-2);border:1px solid var(--line);border-radius:28px;overflow:hidden;min-height:440px;display:flex;flex-direction:column;transition:.2s}.accelerator:hover{border-color:rgba(176,168,254,.4)}
+    .acc-visual{height:170px;position:relative;overflow:hidden;padding:22px;background:#141420}
+    .acc-visual.order{background:linear-gradient(135deg,rgba(229,74,89,.28),rgba(20,20,32,.9))}
+    .acc-visual.copilot{background:linear-gradient(135deg,rgba(79,224,189,.22),rgba(20,20,32,.9))}
+    .acc-visual.demand{background:linear-gradient(135deg,rgba(78,58,173,.42),rgba(20,20,32,.9))}
+    .acc-visual.service{background:linear-gradient(135deg,rgba(176,168,254,.3),rgba(20,20,32,.9))}
+    .tag{position:absolute;top:18px;left:18px;border-radius:999px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.14);padding:7px 10px;font-size:.66rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#fff;backdrop-filter:blur(8px)}
+    .mini-flow{position:absolute;left:28px;right:28px;bottom:27px;display:flex;gap:9px;align-items:center}.mini-box{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:10px 12px;font-size:.72rem;font-weight:850;color:#fff;box-shadow:0 8px 18px rgba(0,0,0,.22)}.mini-line{height:2px;flex:1;background:rgba(255,255,255,.22)}
+    .acc-body{padding:24px;display:flex;flex-direction:column;flex:1}.acc-body h3{font-size:1.75rem;line-height:1.08;margin:0 0 14px;letter-spacing:-.04em;color:#fff}.acc-body p{color:var(--muted);margin:0 0 20px}.why{margin-top:auto;border-top:1px solid var(--line);padding-top:17px;font-size:.9rem;color:var(--ink-soft)}.why b{display:block;margin-bottom:5px;color:var(--yellow);font-family:'Inter';font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+    .proof{margin-top:10px;color:var(--accent-deep);font-weight:900;font-size:.88rem}
+    .warning{margin:28px 0 0;padding:18px 20px;border:1px dashed rgba(255,255,255,.25);border-radius:18px;color:var(--muted);font-size:.96rem}
+    .warning strong{color:#fff}
+
+    .audit{background:var(--tint)}
+    .audit-card{background:var(--paper-2);border:1px solid var(--line);border-radius:30px;padding:30px;display:grid;grid-template-columns:.82fr 1.18fr;gap:30px;align-items:start}
+    .audit-intro h3{font-size:2.2rem;line-height:1;margin:12px 0 16px;letter-spacing:-.05em;color:#fff}.audit-intro p{color:var(--muted)}
+    .audit-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.audit-item{padding:13px 14px;border-radius:14px;background:rgba(255,255,255,.045);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:.9rem;font-weight:750;color:#fff}.dots{display:flex;gap:5px}.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.18)}.dots i:first-child{background:var(--accent)}
+    .audit-question{grid-column:1/-1;margin-top:8px;background:#141420;border:1px solid var(--line);color:#fff;border-radius:18px;padding:18px 20px;font-weight:900;font-size:1.1rem}
+
+    .meet-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .meet-card{border:1px solid var(--line);background:var(--paper-2);border-radius:26px;padding:28px;transition:.2s}.meet-card:hover{border-color:rgba(176,168,254,.4)}.meet-card h3{font-size:1.75rem;letter-spacing:-.04em;margin:6px 0 12px;color:#fff}.meet-card p{color:var(--muted)}.meet-card ul{padding-left:18px;color:var(--ink-soft)}.meet-card li{margin:8px 0}
+    .spot{display:flex;gap:14px;align-items:flex-start;margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}.spot-icon{width:44px;height:44px;border-radius:14px;background:var(--accent-soft);display:grid;place-items:center;font-size:1.2rem}.spot b{display:block;color:#fff}
+
+    .faq-list{display:grid;gap:10px;max-width:920px;margin:0 auto}.faq{border:1px solid var(--line);background:var(--paper-2);border-radius:18px;overflow:hidden}.faq button{width:100%;border:0;background:transparent;padding:20px;text-align:left;display:flex;justify-content:space-between;gap:20px;font-size:1rem;font-weight:850;cursor:pointer;color:#fff}.faq button span:last-child{font-size:1.3rem;color:var(--accent)}.faq .answer{display:none;padding:0 20px 20px;color:var(--muted);max-width:790px}.faq.open .answer{display:block}.faq.open button span:last-child{transform:rotate(45deg)}
+
+    .final-cta{padding:94px 0;color:#fff;text-align:left;overflow:hidden;position:relative;
+      background:radial-gradient(70% 100% at 15% -10%,rgba(78,58,173,.7),rgba(78,58,173,0) 62%),
+      radial-gradient(60% 90% at 100% 120%,rgba(229,74,89,.42),rgba(229,74,89,0) 58%),var(--paper)}
+    .final-cta .eyebrow{color:var(--yellow)}
+    .final-box{position:relative;z-index:2;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}.final-box h2{font-size:clamp(2.6rem,5.2vw,5.5rem);letter-spacing:-.06em;line-height:.96;margin:16px 0 20px;max-width:900px;color:#fff}.final-box p{max-width:670px;font-size:1.05rem;color:#c8c4e0}.final-box .btn{background:var(--accent);color:#fff;border-color:var(--accent);white-space:nowrap;box-shadow:0 8px 26px rgba(229,74,89,.34)}.final-box .btn:hover{background:var(--accent-deep);transform:translateY(-2px)}
+    footer{background:#0d0b16;color:#7a7593;padding:32px 0 46px;font-size:.79rem;border-top:1px solid rgba(255,255,255,.08)}.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.footer-grid strong{color:#fff}.footer-links{text-align:right}.footer-links a{color:#9b96b5;margin-left:18px;text-decoration:none}.footer-links a:hover{color:#fff}.sources{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);line-height:1.75}.sources a{color:#9b96b5}
+
+    .modal-overlay{position:fixed;inset:0;z-index:200;background:rgba(5,4,10,.72);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:20px}
+    .modal-overlay.open{display:flex}
+    .modal-card{width:100%;max-width:480px;max-height:90vh;overflow-y:auto;background:var(--paper-2);border:1px solid var(--line);border-radius:26px;padding:30px;box-shadow:var(--shadow-lg);position:relative}
+    .modal-close{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.05);color:#fff;font-size:1.1rem;line-height:1;cursor:pointer;display:grid;place-items:center}
+    .modal-close:hover{background:rgba(255,255,255,.12)}
+    .modal-card .eyebrow{margin-bottom:10px}
+    .modal-card h3{font-size:1.55rem;letter-spacing:-.03em;margin:0 0 8px;color:#fff;line-height:1.15}
+    .modal-card .modal-copy{color:var(--muted);font-size:.94rem;margin:0 0 22px;line-height:1.5}
+    .modal-form{display:grid;gap:13px}
+    .modal-field label{display:block;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:7px}
+    .modal-field input,.modal-field textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:#fff;font-family:inherit;font-size:.95rem;transition:.15s}
+    .modal-field input::placeholder,.modal-field textarea::placeholder{color:rgba(245,244,250,.32)}
+    .modal-field input:focus,.modal-field textarea:focus{outline:none;border-color:var(--accent);background:rgba(255,255,255,.08)}
+    .modal-field textarea{resize:vertical;min-height:80px}
+    .modal-submit{margin-top:6px;width:100%;justify-content:center;font-size:1rem;padding:14px 18px}
+    .modal-submit:disabled{opacity:.6;cursor:default;transform:none}
+    .modal-error{display:none;color:var(--accent-deep);font-size:.84rem;font-weight:700;margin-top:2px}
+    .modal-error.show{display:block}
+    .modal-success{display:none;text-align:center;padding:16px 0 4px}
+    .modal-success.show{display:block}
+    .modal-success .check{width:52px;height:52px;border-radius:50%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-size:1.6rem;margin:0 auto 16px}
+    .modal-success h3{margin-bottom:8px}
+    .modal-success p{color:var(--muted);font-size:.94rem}
+
+    .reveal{opacity:1;transform:none}.js .reveal{opacity:0;transform:translateY(18px);transition:.6s ease}.js .reveal.show{opacity:1;transform:none}
+    @media(max-width:980px){
+      .nav-links{display:none}.mobile-menu{display:inline-flex}
+      .hero-grid,.countdown-panel,.audit-card,.final-box{grid-template-columns:1fr}.hero{padding-top:52px}.machine-card{max-width:700px}
+      .stats,.fit-grid{grid-template-columns:repeat(2,1fr)}.countdown{max-width:520px}.final-box{align-items:start}.footer-grid{grid-template-columns:1fr}.footer-links{text-align:left}.footer-links a{margin:0 18px 0 0}
+    }
+    @media(max-width:680px){
+      .wrap{width:min(var(--max),calc(100% - 24px))}.nav-inner{height:62px}.brand{font-size:1.35rem}.brand img{height:22px}
+      h1{font-size:clamp(2.5rem,14vw,4rem)}.hero-grid{gap:34px}.hero-copy{font-size:1.02rem}
+      section{padding:70px 0}.stats,.fit-grid,.persona-grid,.accelerators-grid,.meet-grid,.audit-list{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(4,1fr);gap:5px}.timebox{padding:12px 3px}.timebox b{font-size:1.25rem}.fit-callout{align-items:flex-start;flex-direction:column}
+      .flow-row{grid-template-columns:1fr 24px 1fr}.node{padding:13px;min-height:86px}.node strong{font-size:.86rem}.human-glue:after{display:none}
+      .final-box h2{font-size:3rem}.section-head h2{font-size:2.3rem}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}.js .reveal{opacity:1;transform:none;transition:none}}
+    @media(max-width:420px){
+      .wrap{width:min(var(--max),calc(100% - 20px))}
+      .nav-inner{gap:10px}.nav .btn{font-size:12.5px;padding:10px 13px}.brand img{height:20px}
+      .eyebrow{font-size:.68rem;gap:8px}
+      .hero-actions .btn{width:100%}.hero-actions{flex-direction:column}
+      .stat{padding:20px}.stat .num{font-size:2.5rem}
+      .audit-card{padding:22px}.audit-intro h3{font-size:1.8rem}
+      .persona{padding:20px}.persona blockquote{font-size:1.15rem}
+      .acc-body{padding:20px}.acc-body h3{font-size:1.5rem}
+      .meet-card{padding:20px}
+      .modal-card{padding:22px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Tezo IMTS home"><img src="logow.png" alt="Tezo"></a>
+      <div class="nav-links">
+        <a href="#fit">Where we fit</a><a href="#questions">The questions</a><a href="#accelerators">What we'll show</a><a href="#meet">Meet us</a>
+      </div>
+      <button type="button" class="btn primary" onclick="openLeadModal()">Book 20 minutes ↗</button>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Tezo → IMTS 2026</div>
+          <p class="event-line">14–19 September · McCormick Place · Chicago</p>
+          <p class="attendee-line">Attending, not exhibiting. No booth. No badge scanner. No hard sell.</p>
+          <h1>Automation doesn't stop at the <span class="accent">machine.</span></h1>
+          <p class="hero-copy">You'll see plenty of machines doing extraordinary things at IMTS. We'd like to talk about the work around them that still happens by <strong>email, spreadsheet and swivel chair.</strong> A PO someone rekeys. A shortage someone discovers too late. An exception sitting in an inbox. A planner hunting across four systems for an answer.</p>
+          <div class="hero-actions">
+            <button type="button" class="btn primary" onclick="openLeadModal()">Book 20 minutes →</button>
+            <a class="btn ghost" href="#questions">Bring the problem, skip the pitch ↓</a>
+          </div>
+          <p class="micro">Bring us one workflow you wish would disappear. We'll spend more time on your stack than ours, and only open the laptop if it helps.</p>
+        </div>
+        <div class="machine-card reveal" aria-label="Example of manual handoffs between manufacturing systems">
+          <div class="machine-top"><div><strong>THE INVISIBLE WORK</strong><br><span style="color:var(--muted);font-size:.84rem">What happens between systems</span></div><span class="live-pill"><span class="live-dot"></span> still running</span></div>
+          <div class="flow">
+            <div class="flow-row"><div class="node"><small>Input</small><strong>Customer PO<br>PDF / Excel / Email</strong></div><div class="arrow"></div><div class="node human-glue"><small>Step 01</small><strong>Read, interpret, re-key</strong></div></div>
+            <div class="flow-row"><div class="node human-glue"><small>Step 02</small><strong>Check ERP, CRM & inventory</strong></div><div class="arrow"></div><div class="node"><small>Systems</small><strong>ERP · CRM · WMS</strong></div></div>
+            <div class="flow-row"><div class="node"><small>Exception</small><strong>Shortage / mismatch / expedite</strong></div><div class="arrow"></div><div class="node human-glue"><small>Step 03</small><strong>Email, chase, reconcile</strong></div></div>
+          </div>
+          <div class="flow-note"><strong style="color:var(--ink)">Our IMTS question:</strong> if volume doubled tomorrow, which box would need twice as many people?</div>
+        </div>
+      </div>
+      <div class="wrap countdown-panel reveal">
+        <div class="countdown-copy"><h3>Until the East & West halls open</h3><p>Monday, September 14 · 9:00am CT · McCormick Place</p></div>
+        <div class="countdown" aria-label="Countdown to IMTS 2026"><div class="timebox"><b id="days">--</b><span>Days</span></div><div class="timebox"><b id="hours">--</b><span>Hrs</span></div><div class="timebox"><b id="mins">--</b><span>Min</span></div><div class="timebox"><b id="secs">--</b><span>Sec</span></div></div>
+      </div>
+    </header>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Order entry</span><span>Supply-chain exceptions</span><span>Demand & inventory</span><span>Aftermarket service</span><span>Data trapped between systems</span><span>Order entry</span><span>Supply-chain exceptions</span><span>Demand & inventory</span><span>Aftermarket service</span><span>Data trapped between systems</span></div></div>
+
+    <section id="state">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">The state of play · sourced</div><h2>Manufacturing has an automation problem. Just not the one you think.</h2></div><p>Digital manufacturing is already mainstream. The harder problem is getting the value to travel end-to-end — across data, workflows, people and enterprise systems.</p></div>
+        <div class="stats">
+          <article class="stat reveal"><div><div class="num">90%</div><p>of manufacturers say digital transformation is necessary to stay competitive.</p></div><a class="source" href="https://www.rockwellautomation.com/en-gb/capabilities/digital-transformation/state-of-smart-manufacturing.html" target="_blank" rel="noopener">Rockwell Automation · 2026 ↗</a></article>
+          <article class="stat reveal"><div><div class="num">59%</div><p>are already using smart manufacturing.</p></div><a class="source" href="https://www.rockwellautomation.com/en-gb/capabilities/digital-transformation/state-of-smart-manufacturing.html" target="_blank" rel="noopener">Rockwell Automation · 2026 ↗</a></article>
+          <article class="stat reveal"><div><div class="num">72%</div><p>of operations leaders rank automating operations as a top-three AI investment focus.</p></div><a class="source" href="https://www.pwc.com/us/en/services/consulting/supply-chain-operations/library/digital-trends-operations-survey.html" target="_blank" rel="noopener">PwC Digital Trends in Operations · 2026 ↗</a></article>
+          <article class="stat reveal"><div><div class="num">89%</div><p>say technology investments have not fully delivered the expected results.</p></div><a class="source" href="https://www.pwc.com/us/en/services/consulting/supply-chain-operations/library/digital-trends-operations-survey.html" target="_blank" rel="noopener">PwC Digital Trends in Operations · 2026 ↗</a></article>
+        </div>
+        <div class="punch-callout reveal"><p>The factory isn't short of technology. It's short of <em>connections between the work.</em></p></div>
+      </div>
+    </section>
+
+    <section id="fit">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">Where Tezo fits</div><h2>We automate the work between the systems.</h2></div><p>Not a generic “AI for manufacturing” pitch. We look for the point where a digital workflow quietly becomes a human workflow — and where exceptions, handoffs and fragmented data make scale expensive.</p></div>
+        <div class="fit-grid">
+          <article class="fit-card reveal"><span class="idx">01</span><h3>Orders arrive however customers choose.</h3><p>Email. PDF. Excel. Portal. EDI. Different formats, different rules, different exceptions.</p></article>
+          <article class="fit-card reveal"><span class="idx">02</span><h3>Systems disagree.</h3><p>ERP says one thing. CRM another. Supply chain has a third version. People become the reconciliation layer.</p></article>
+          <article class="fit-card reveal"><span class="idx">03</span><h3>The happy path breaks.</h3><p>Shortage. Expedite. Change request. Missing information. That's usually where the automation stops.</p></article>
+          <article class="fit-card reveal"><span class="idx">04</span><h3>Someone becomes the integration.</h3><p>Copy. Paste. Email. Reconcile. Escalate. Repeat. The work is digital; the workflow isn't.</p></article>
+        </div>
+        <div class="fit-callout reveal"><span>That's the work we automate.</span><span style="font-size:.9rem;font-weight:700;opacity:.85">AI · Data · Digital Engineering · Quality Engineering</span></div>
+      </div>
+    </section>
+
+    <section class="questions" id="questions">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">What we're actually bringing to Chicago</div><h2>Four questions. Pick the one that sounds uncomfortably familiar.</h2></div><p>We open with a question rather than a pitch. If the honest answer makes you wince slightly, that's probably the twenty minutes worth having.</p></div>
+        <div class="persona-grid">
+          <article class="persona reveal"><div class="role">COO · VP Operations · Plant Leader</div><blockquote>“Which process in your operation is technically digital but still needs people moving information between systems all day?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“What happens when the happy path breaks?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> exception-first workflow automation across operational systems — not just automation of the clean cases.</div></article>
+          <article class="persona reveal"><div class="role">VP Supply Chain · Planning · Logistics</div><blockquote>“When supply changes at 9:00am, how long before everyone who needs to act sees the same version of the problem?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“And how many spreadsheets are involved?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> connected operational intelligence across demand, inventory, orders, suppliers and exceptions.</div></article>
+          <article class="persona reveal"><div class="role">CIO · CTO · Digital Manufacturing</div><blockquote>“How much of your automation roadmap is actually integration work wearing an AI label?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“Where does the workflow stop today?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> AI + data + digital engineering that turns point automation into a production workflow.</div></article>
+          <article class="persona reveal"><div class="role">Customer Operations · Order Management</div><blockquote>“If order volume doubled tomorrow, what part of the process would require twice as many people?”</blockquote><div class="follow"><small>Then we'll probably ask</small>“What would it take for only the exceptions to reach a person?”</div><div class="tezo-fit"><b>Where Tezo fits:</b> intelligent document and order orchestration with validation, business rules and exception routing.</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="accelerators">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">If you ask, we'll show you</div><h2>Four things that run. Ninety seconds each. On a laptop. Somewhere in McCormick Place.</h2></div><p>No booth, no stage, no thirty-seven-slide transformation deck. Working patterns for the kinds of operational problems we expect to hear all week.</p></div>
+        <div class="accelerators-grid">
+          <article class="accelerator reveal"><div class="acc-visual order"><span class="tag">Accelerator 01 · Hero</span><div class="mini-flow"><span class="mini-box">PO / RFQ</span><span class="mini-line"></span><span class="mini-box">AI validation</span><span class="mini-line"></span><span class="mini-box">ERP</span></div></div><div class="acc-body"><h3>Intelligent Order Entry & RFQ Automation</h3><p>Customer orders arrive however customers choose to send them. AI extracts, validates and orchestrates the workflow across enterprise systems, routing only genuine exceptions to people.</p><div class="why"><b>Why it's different</b>We automate the exception and the downstream workflow — not just the document extraction.<div class="proof">Production reference: a multi-day order/RFQ workflow reduced to minutes.</div></div></div></article>
+          <article class="accelerator reveal"><div class="acc-visual copilot"><span class="tag">Accelerator 02</span><div class="mini-flow"><span class="mini-box">ERP</span><span class="mini-box">WMS</span><span class="mini-box">Supplier</span><span class="mini-line"></span><span class="mini-box">Ask</span></div></div><div class="acc-body"><h3>Supply Chain Operations Copilot</h3><p>Orders, inventory, supplier, shipment and enterprise data brought into a conversational operating layer so teams can ask what changed, why it matters and what needs attention.</p><div class="why"><b>Why it's different</b>Not another dashboard. It turns fragmented operational data into a decision and follow-through workflow.</div></div></article>
+          <article class="accelerator reveal"><div class="acc-visual demand"><span class="tag">Accelerator 03</span><div class="mini-flow"><span class="mini-box">Demand</span><span class="mini-line"></span><span class="mini-box">Inventory</span><span class="mini-line"></span><span class="mini-box">Action</span></div></div><div class="acc-body"><h3>Demand, Inventory & Supply Intelligence</h3><p>Combines demand signals, inventory positions, supply constraints and historical patterns to identify risk early and help planners focus on the decisions that need judgment.</p><div class="why"><b>Why it's different</b>Forecasting becomes a decision workflow — not another forecast file or isolated model output.</div></div></article>
+          <article class="accelerator reveal"><div class="acc-visual service"><span class="tag">Accelerator 04</span><div class="mini-flow"><span class="mini-box">Customer</span><span class="mini-line"></span><span class="mini-box">Parts</span><span class="mini-box">Tech</span><span class="mini-line"></span><span class="mini-box">SLA</span></div></div><div class="acc-body"><h3>Service & Dispatch Intelligence</h3><p>Optimises the moving pieces after the product leaves the factory: technicians, appointments, parts, routes, capacity and service commitments.</p><div class="why"><b>Why it's different</b>The goal isn't a prettier dispatch board. It's fewer service exceptions requiring manual intervention.</div></div></article>
+        </div>
+        <p class="warning reveal"><strong>A fair warning:</strong> we'll almost certainly spend more of the twenty minutes on your workflow than on our accelerators. That's intentional. The best IMTS conversation for us ends with a clearer problem, not a longer product demo.</p>
+      </div>
+    </section>
+
+    <section class="audit" id="audit">
+      <div class="wrap">
+        <div class="audit-card reveal">
+          <div class="audit-intro"><div class="eyebrow">Free, useful, and yours either way</div><h3>The Invisible Factory Work Audit</h3><p>Ten places automation usually stops. Use it as a quick diagnostic while you're walking IMTS: fully automated, partially automated, or still held together by human glue.</p><a class="btn ghost" href="#meet">Ask us for the one-page version →</a></div>
+          <div class="audit-list">
+            <div class="audit-item">Order intake <span class="dots"><i></i><i></i><i></i></span></div><div class="audit-item">RFQ processing <span class="dots"><i></i><i></i><i></i></span></div>
+            <div class="audit-item">Supplier communication <span class="dots"><i></i><i></i><i></i></span></div><div class="audit-item">Planning exceptions <span class="dots"><i></i><i></i><i></i></span></div>
+            <div class="audit-item">Inventory reconciliation <span class="dots"><i></i><i></i><i></i></span></div><div class="audit-item">Shipment exceptions <span class="dots"><i></i><i></i><i></i></span></div>
+            <div class="audit-item">Quality documentation <span class="dots"><i></i><i></i><i></i></span></div><div class="audit-item">Work instructions <span class="dots"><i></i><i></i><i></i></span></div>
+            <div class="audit-item">Field / aftermarket service <span class="dots"><i></i><i></i><i></i></span></div><div class="audit-item">Management reporting <span class="dots"><i></i><i></i><i></i></span></div>
+          </div>
+          <div class="audit-question">The only question at the bottom: “If volume doubled, which one breaks first?”</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="meet">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">Who you'll actually be talking to</div><h2>The Tezo team. No booth handoff afterwards.</h2></div><p>We're attending IMTS as participants, not exhibitors. That means the people you meet are there to have the conversation, not scan a badge and pass you to someone else.</p></div>
+        <div class="meet-grid">
+          <article class="meet-card reveal"><div class="eyebrow">Talk to us about</div><h3>The workflow that's creating operational drag.</h3><p>Especially if it crosses more than one system or team and the exceptions are still handled manually.</p><ul><li>Order / RFQ automation</li><li>Supply-chain and planning exceptions</li><li>Operational data and decision intelligence</li><li>Service / dispatch workflows</li><li>AI agents that have to work inside real enterprise systems</li></ul></article>
+          <article class="meet-card reveal"><div class="eyebrow">How to spot us</div><h3>No booth. That's the point.</h3><p>We'll be moving between the automation, software, quality, plant-operations and AI conversations across McCormick Place — with working accelerators on a laptop if the discussion warrants it.</p><div class="spot"><div class="spot-icon">☕</div><div><b>Best meeting room:</b><span style="color:var(--muted)"> a coffee, a quiet table, or the twenty-minute gap your Show Planner says is still free.</span></div></div><div style="margin-top:22px"><button type="button" class="btn primary" onclick="openLeadModal()">Start the conversation →</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head reveal"><div><div class="eyebrow">Reasonable scepticism · answered</div><h2>What you must be wondering.</h2></div><p>We aren't exhibiting, and we're not pretending otherwise. Here are the useful answers before you decide whether to spend twenty minutes with us.</p></div>
+        <div class="faq-list">
+          <div class="faq reveal"><button aria-expanded="false"><span>So you're not exhibiting. Why should I meet you at IMTS?</span><span>+</span></button><div class="answer">Because the thing we want to talk about is usually not sitting on a booth. It's the workflow between the machines, systems and people you already have — the operational friction that turns into headcount, delay, avoidable exceptions or missed visibility as volume grows.</div></div>
+          <div class="faq reveal"><button aria-expanded="false"><span>Is this going to become an AI pitch?</span><span>+</span></button><div class="answer">No. We open with your workflow. If AI belongs in the solution, we'll explain why. If integration, data engineering or a simpler automation pattern is the better answer, we'll say that instead.</div></div>
+          <div class="faq reveal"><button aria-expanded="false"><span>What does Tezo actually do?</span><span>+</span></button><div class="answer">Tezo is an AI, data and digital engineering partner. In manufacturing and supply-chain contexts, our strongest conversations are around operational automation, connected data, decision intelligence, product/digital engineering and the quality engineering needed to make those systems reliable in production.</div></div>
+          <div class="faq reveal"><button aria-expanded="false"><span>I'm not buying anything this year. Still worth meeting?</span><span>+</span></button><div class="answer">Yes. IMTS is a good place to compare operating problems as much as technologies. Bring a workflow, use the Invisible Factory Work Audit, and leave with a sharper view of where the manual work actually sits. If that's all the conversation becomes, that's still useful.</div></div>
+          <div class="faq reveal"><button aria-expanded="false"><span>Are you an IMTS exhibitor, sponsor or official partner?</span><span>+</span></button><div class="answer">No. Tezo is attending IMTS 2026 as a participant. This page is created by Tezo and is not affiliated with, sponsored by, endorsed by or produced by IMTS or its organiser.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="wrap final-box reveal"><div><div class="eyebrow" style="color:var(--yellow)">14–19 September · Chicago</div><h2>Twenty minutes. Bring the workflow that's stuck.</h2><p>We don't need a booth to have the useful conversation. Tell us where work still falls out of your systems and into someone's inbox, spreadsheet or daily reconciliation routine.</p></div><button type="button" class="btn" onclick="openLeadModal()">Meet Tezo at IMTS →</button></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid"><div><strong>TEZO · IMTS 2026</strong><br>September 14–19 · McCormick Place · Chicago</div><div class="footer-links"><a href="#fit">Where we fit</a><a href="#questions">Questions</a><a href="#accelerators">Accelerators</a><a href="#faq">FAQ</a></div></div>
+      <div class="sources"><strong>Sources used on this page:</strong> IMTS 2026 dates, venue and visitor hours — <a href="https://www.imts.com/show/faqs.cfm" target="_blank" rel="noopener">IMTS official FAQ</a>. Smart-manufacturing adoption and digital-transformation figures — <a href="https://www.rockwellautomation.com/en-gb/capabilities/digital-transformation/state-of-smart-manufacturing.html" target="_blank" rel="noopener">Rockwell Automation, 2026 State of Smart Manufacturing</a>. Operations AI-investment and technology-value figures — <a href="https://www.pwc.com/us/en/services/consulting/supply-chain-operations/library/digital-trends-operations-survey.html" target="_blank" rel="noopener">PwC, 2026 Digital Trends in Operations</a>.</div>
+      <div style="margin-top:18px">Tezo is attending IMTS 2026 as a participant. Tezo is not an exhibitor, sponsor or official partner of IMTS, and this page is not affiliated with or endorsed by the organiser. IMTS and International Manufacturing Technology Show are trademarks of their respective owner. © 2026 Tezo. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="leadModalOverlay" onclick="if(event.target===this)closeLeadModal()">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+      <button type="button" class="modal-close" aria-label="Close" onclick="closeLeadModal()">✕</button>
+
+      <div id="leadModalForm">
+        <div class="eyebrow">Tezo → IMTS 2026 · 14–19 Sept, Chicago</div>
+        <h3 id="leadModalTitle">Let's find twenty minutes in Chicago.</h3>
+        <p class="modal-copy">We're attending, not exhibiting — no booth to route this through. Tell us who you are and the workflow you'd like to talk about, and we'll get back to you to set up a time on the show floor (or a call, if plans change).</p>
+        <form class="modal-form" id="leadForm" onsubmit="submitLeadForm(event)">
+          <div class="modal-field">
+            <label for="lf-name">Name</label>
+            <input type="text" id="lf-name" name="firstname" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="modal-field">
+            <label for="lf-company">Company name</label>
+            <input type="text" id="lf-company" name="company" placeholder="Your company" autocomplete="organization">
+          </div>
+          <div class="modal-field">
+            <label for="lf-email">Email <span style="color:var(--accent-deep)">*</span></label>
+            <input type="email" id="lf-email" name="email" placeholder="you@company.com" autocomplete="email" required>
+          </div>
+          <div class="modal-field">
+            <label for="lf-message">Message</label>
+            <textarea id="lf-message" name="message" placeholder="What's the workflow you want to talk about?"></textarea>
+          </div>
+          <input type="hidden" id="lf-utm-source" name="utm_source">
+          <input type="hidden" id="lf-utm-medium" name="utm_medium">
+          <input type="hidden" id="lf-utm-campaign" name="utm_campaign">
+          <div class="modal-error" id="lfError">Please enter a valid email address.</div>
+          <button type="submit" class="btn primary modal-submit" id="lfSubmitBtn">Send it over →</button>
+        </form>
+      </div>
+
+      <div class="modal-success" id="leadModalSuccess">
+        <div class="check">✓</div>
+        <h3>Got it — thank you.</h3>
+        <p>We'll reach out to line up your twenty minutes at IMTS. See you in Chicago.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Lead-capture modal → HubSpot Forms Submission API (manual fetch, keeps our own styling)
+    const HS_PORTAL_ID = '242046967';
+    const HS_FORM_GUID = '1f8bd5da-a1da-4025-98da-39ad98a42824';
+
+    function getQueryParam(name){
+      return new URLSearchParams(window.location.search).get(name) || '';
+    }
+    function getHubspotCookie(){
+      const match = document.cookie.match(/(?:^|;\s*)hubspotutk=([^;]+)/);
+      return match ? match[1] : '';
+    }
+    function prefillUtm(){
+      document.getElementById('lf-utm-source').value = getQueryParam('utm_source');
+      document.getElementById('lf-utm-medium').value = getQueryParam('utm_medium');
+      document.getElementById('lf-utm-campaign').value = getQueryParam('utm_campaign');
+    }
+
+    function openLeadModal(){
+      prefillUtm();
+      document.getElementById('leadModalOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLeadModal(){
+      document.getElementById('leadModalOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        document.getElementById('leadModalForm').style.display = '';
+        document.getElementById('leadModalSuccess').classList.remove('show');
+      }, 300);
+    }
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') closeLeadModal();
+    });
+
+    async function submitLeadForm(e){
+      e.preventDefault();
+      const errorEl = document.getElementById('lfError');
+      const submitBtn = document.getElementById('lfSubmitBtn');
+      const email = document.getElementById('lf-email').value.trim();
+      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      if(!emailOk){
+        errorEl.textContent = 'Please enter a valid email address.';
+        errorEl.classList.add('show');
+        return;
+      }
+      errorEl.classList.remove('show');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      const fields = [
+        { name: 'firstname', value: document.getElementById('lf-name').value.trim() },
+        { name: 'company', value: document.getElementById('lf-company').value.trim() },
+        { name: 'email', value: email },
+        { name: 'message', value: document.getElementById('lf-message').value.trim() },
+        { name: 'utm_source', value: document.getElementById('lf-utm-source').value },
+        { name: 'utm_medium', value: document.getElementById('lf-utm-medium').value },
+        { name: 'utm_campaign', value: document.getElementById('lf-utm-campaign').value }
+      ];
+
+      const payload = {
+        fields,
+        context: {
+          hutk: getHubspotCookie(),
+          pageUri: window.location.href,
+          pageName: document.title
+        }
+      };
+
+      try{
+        const res = await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${HS_PORTAL_ID}/${HS_FORM_GUID}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if(!res.ok) throw new Error('Submission failed');
+
+        document.getElementById('leadModalForm').style.display = 'none';
+        document.getElementById('leadModalSuccess').classList.add('show');
+        document.getElementById('leadForm').reset();
+      } catch(err){
+        errorEl.textContent = "Something went wrong sending that — please try again in a moment.";
+        errorEl.classList.add('show');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send it over →';
+      }
+    }
+  </script>
+
+  <script>
+    // Countdown to 9:00 AM Central Daylight Time on Monday, September 14, 2026.
+    const target = new Date('2026-09-14T09:00:00-05:00').getTime();
+    const ids = ['days','hours','mins','secs'];
+    function tick(){
+      const now=Date.now(), diff=target-now;
+      if(diff<=0){
+        const label=document.querySelector('.countdown-copy h3');
+        if(label) label.textContent='We’re on the floor at IMTS.';
+        ids.forEach(id=>document.getElementById(id).textContent='00');
+        return;
+      }
+      const d=Math.floor(diff/86400000), h=Math.floor((diff%86400000)/3600000), m=Math.floor((diff%3600000)/60000), s=Math.floor((diff%60000)/1000);
+      document.getElementById('days').textContent=String(d).padStart(2,'0');
+      document.getElementById('hours').textContent=String(h).padStart(2,'0');
+      document.getElementById('mins').textContent=String(m).padStart(2,'0');
+      document.getElementById('secs').textContent=String(s).padStart(2,'0');
+    }
+    tick(); setInterval(tick,1000);
+
+    document.querySelectorAll('.faq button').forEach(btn=>btn.addEventListener('click',()=>{
+      const item=btn.closest('.faq'), open=item.classList.toggle('open');
+      btn.setAttribute('aria-expanded',String(open));
+    }));
+
+    const io = new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
